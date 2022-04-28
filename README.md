@@ -16,3 +16,38 @@ all the possible states are added to queue,
 each state is mapped to it's parent(state before moving "0"),
 
 BFS algorithm finds shortest path from initial state to solution.
+
+
+A C-implementation solving the 8-puzzle problem using the uninformed search strategy BFS (Breadth-First Search) and heusitic search strategy A*. The goal is to empirically compare both strategies' space and time performance.
+
+For each strategy, the program collects and outputs the following information:
+
+sequence of moves corresponding to the solution (e.g. up, down, left, right)
+total number of nodes expanded
+total number of nodes generated
+length of the solution path (number of moves)
+Test Cases
+Goal board configuration:
+
+1	2	3
+8	0	4
+7	6	5
+
+Initial board configurations:
+
+Easy
+1	3	4
+8	6	2
+7	0	5
+Medium
+2	8	1
+0	4	3
+7	6	5
+Hard
+2	8	1
+4	6	3
+7	5	0
+Worst
+5	6	7
+4	0	8
+3	2	1
